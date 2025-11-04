@@ -1,2 +1,2 @@
 # Portfolio
-This is my first project using html and css
+This is my first project using html css and js
