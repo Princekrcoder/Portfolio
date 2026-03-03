@@ -1,26 +1,137 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-main: #ffffff;
+  --color-bg-card: rgba(245, 245, 245, 0.4);
+  --color-bg-card-hover: rgba(230, 230, 230, 0.6);
+  --color-bg-card-solid: #f5f5f5;
+
+  --color-text-primary: #111111;
+  --color-text-secondary: #52525b;
+  --color-text-muted: #71717a;
+
+  --color-accent: #111111;
+  --color-accent-hover: #000000;
+
+  --color-border-custom: #e4e4e7;
+  --color-border-hover: #d4d4d8;
+
+  --color-bg-base: #ffffff;
+}
+
+.dark {
+  --color-bg-main: #000000;
+  --color-bg-card: rgba(23, 23, 23, 0.4);
+  --color-bg-card-hover: rgba(30, 30, 30, 0.6);
+  --color-bg-card-solid: #171717;
+
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  --color-accent: #e5e5e5;
+  --color-accent-hover: #ffffff;
+
+  --color-border-custom: #27272a;
+  --color-border-hover: #3f3f46;
+
+  --color-bg-base: #000000;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --animate-scale-in: scaleIn 0.8s ease forwards 0.2s;
+
+  @keyframes scaleIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  --animate-scroll-left: scroll-left 20s linear infinite;
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  --animate-scroll-right: scroll-right 20s linear infinite;
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .text-gradient-gitlab {
+    background: linear-gradient(to right, #ff1835, #ffc900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-mozilla {
+    background: linear-gradient(to right, #808080, #d3d3d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-facebook {
+    background: linear-gradient(to right, #7f00de, #ff007f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .mask-radial {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, rgb(0, 0, 0) 60%, transparent 70%);
+    mask-image: radial-gradient(circle at 50% 50%, rgb(0, 0, 0) 60%, transparent 70%);
+  }
+
+  .mask-linear {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  }
+
+  .bg-map {
+    background-image: radial-gradient(circle at 50% 50%, rgb(0, 0, 0) 60%, transparent 70%), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><circle cx="50" cy="50" r="40" stroke="%23fff" stroke-width="2" fill="none"/></svg>');
+    background-size: cover, 150%;
+    background-position: center;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
