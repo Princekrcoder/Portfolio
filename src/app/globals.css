@@ -135,3 +135,30 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+@keyframes vertical-slide {
+
+  0%,
+  20% {
+    transform: translateY(0%);
+  }
+
+  30%,
+  50% {
+    transform: translateY(-25%);
+  }
+
+  60%,
+  80% {
+    transform: translateY(-50%);
+  }
+
+  90%,
+  100% {
+    transform: translateY(-75%);
+  }
+}
+
+.animate-vertical-slide {
+  animation: vertical-slide 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

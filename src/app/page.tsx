@@ -11,7 +11,6 @@ export default function Home() {
     <div className="mx-auto max-w-[1024px] px-6 py-8 relative">
       {/* Background Ambient Glow Images */}
       {/* Fixed position images matching the dark background aesthetics */}
-      <img src="/gradient-background-top.webp" alt="" role="presentation" className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] max-w-[1920px] -z-10 pointer-events-none opacity-80" />
       <img src="/gradient-bottom.png" alt="" role="presentation" className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[100vw] max-w-[1920px] -z-10 pointer-events-none opacity-90" />
 
 

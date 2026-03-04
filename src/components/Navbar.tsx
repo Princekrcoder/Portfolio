@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -26,7 +28,7 @@ export default function Navbar() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="fixed top-0 inset-x-0 z-50 pt-6 pb-4 px-4 bg-gradient-to-b from-[var(--color-bg-base)] to-transparent"
         >
-            <div className="flex flex-col mx-auto max-w-5xl rounded-2xl bg-white/70 dark:bg-[#111111]/80 backdrop-blur-md border border-gray-200 dark:border-white/5 shadow-sm overflow-hidden transition-all duration-300">
+            <div className="flex flex-col mx-auto max-w-5xl rounded-2xl bg-white/70 dark:bg-white/5 backdrop-blur-md border border-gray-200 dark:border-white/5 shadow-sm overflow-hidden transition-all duration-300">
                 <div className="flex items-center justify-between px-6 py-4">
                     {/* Logo Area */}
                     <Link href="/" className="flex items-center text-black dark:text-white mr-8 group" onClick={() => setIsOpen(false)}>
@@ -37,16 +39,25 @@ export default function Navbar() {
 
                     {/* Desktop Navigation */}
                     <ul className="hidden md:flex items-center gap-6 text-[0.95rem] font-medium text-gray-500 dark:text-gray-400">
-                        {navLinks.map((link) => (
-                            <li key={link.href}>
-                                <Link
-                                    href={link.href}
-                                    className={link.href === "/" ? "text-black dark:text-white" : "hover:text-black dark:hover:text-white transition-colors"}
-                                >
-                                    {link.label}
-                                </Link>
-                            </li>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isActive = pathname === link.href;
+                            return (
+                                <li key={link.href} className="relative flex flex-col items-center">
+                                    <Link
+                                        href={link.href}
+                                        className={isActive
+                                            ? "text-black dark:text-white"
+                                            : "hover:text-black dark:hover:text-white transition-colors"
+                                        }
+                                    >
+                                        {link.label}
+                                    </Link>
+                                    {isActive && (
+                                        <span className="absolute -bottom-[18px] left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-red-500 shadow-[0_0_8px_2px_rgba(239,68,68,0.7)]" />
+                                    )}
+                                </li>
+                            );
+                        })}
                     </ul>
 
                     {/* Right Side Icons */}
@@ -105,7 +116,7 @@ export default function Navbar() {
                     )}
                 </AnimatePresence>
             </div>
-        </motion.nav>
+        </motion.nav >
     );
 }
 
