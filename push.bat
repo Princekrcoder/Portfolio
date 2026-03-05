@@ -11,7 +11,7 @@ git add .
 git commit -m "Initial commit"
 
 git branch -M main
-git remote add origin https://github.com/Princekrcoder/Portfolio.git
+git remote add origin https://github.com/Princekrcoder/princekr_coder.git
 git push -u origin main
 
 pause
