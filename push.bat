@@ -1,5 +1,5 @@
 @echo off
-cd /d E:\codenexus-studio
+cd /d E:\Portfolio\next-portfolio
 
 :: Git identity (commit ke liye)
 git config --global user.name "Princekrcoder"
