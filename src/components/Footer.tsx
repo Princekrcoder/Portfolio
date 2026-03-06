@@ -38,14 +38,14 @@ export default function Footer() {
                             <Link href="/links" className="hover:text-[var(--color-text-primary)] transition-colors">Links</Link>
                         </div>
                         <div className="flex flex-col gap-6 text-sm font-medium text-[var(--color-text-secondary)] col-span-2 md:col-span-1">
-                            <a href="https://github.com/shubham-kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">GitHub</a>
-                            <a href="https://gitlab.com/shubham-kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">GitLab</a>
-                            <a href="https://twitter.com/shubham-kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">Twitter</a>
-                            <a href="https://youtube.com/shubham-kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">YouTube</a>
+                            <a href="https://github.com/Prince-Kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">GitHub</a>
+                            <a href="https://gitlab.com/Prince-Kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">GitLab</a>
+                            <a href="https://twitter.com/Prince-Kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">Twitter</a>
+                            <a href="https://youtube.com/Prince-Kumar" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-text-primary)] transition-colors">YouTube</a>
                         </div>
                     </div>
 
-                    <p className="text-sm text-[var(--color-text-secondary)] font-semibold">© 2026 Shubham Kumar. All Rights Reserved.</p>
+                    <p className="text-sm text-[var(--color-text-secondary)] font-semibold">© 2026 Prince Kumar. All Rights Reserved.</p>
                 </div>
             </div>
         </motion.footer>

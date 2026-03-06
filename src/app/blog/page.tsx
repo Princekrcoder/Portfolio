@@ -26,9 +26,9 @@ const articles = [
         tag: "Blog",
     },
     {
-        slug: "backend-engineer-tips",
-        title: "Backend Engineering Best Practices",
-        excerpt: "Key patterns and practices I've learned while building scalable backend systems in production.",
+        slug: "Full-Stack-engineer-tips",
+        title: "Full-Stack Engineering Best Practices",
+        excerpt: "Key patterns and practices I've learned while building scalable Full-Stack systems in production.",
         cover: "/cover.webp",
         date: "May 14, 2024",
         likes: 84,

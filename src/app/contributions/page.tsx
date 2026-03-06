@@ -28,10 +28,10 @@ const featuredContributions = [
         title: "Expand GitLab API Capabilities - Groups, Projects & Members",
         desc: "Contributed strategic enhancements to GitLab's API offering, focusing on Groups, Projects, and Members APIs. Filled critical gaps that significantly expanded platform capabilities for developers and integrations.",
         highlight: "50+ merged requests expanding GitLab API - Nominated for MVP 17.1 Release",
-        quote: '"Shubham has helped with a lot of issues over the past weeks and months, specifically around gaps in our API offering. I cannot write release posts fast enough for all the additions that @imskr is pushing through."',
+        quote: '"Prince has helped with a lot of issues over the past weeks and months, specifically around gaps in our API offering. I cannot write release posts fast enough for all the additions that @imskr is pushing through."',
         quoteAuthor: "Christina Lohr",
         quoteRole: "Senior Product Manager at GitLab",
-        tags: ["API", "Ruby on Rails", "Backend", "GraphQL"],
+        tags: ["API", "Ruby on Rails", "Full-Stack", "GraphQL"],
         link: "https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=merged&author_username=imskr",
         awardLink: "https://about.gitlab.com/releases/2024/06/20/gitlab-17-1-released/#notable-contributor",
     },
@@ -69,7 +69,7 @@ const gsocProjects = [
 ];
 
 const testimonials = [
-    { text: "Thanks Shubham!! I was able to get my first PR merged because of your video. Thanks a ton ✌️", author: "@mayankvirmani3403", role: "YouTube Viewer" },
+    { text: "Thanks Prince!! I was able to get my first PR merged because of your video. Thanks a ton ✌️", author: "@mayankvirmani3403", role: "YouTube Viewer" },
     { text: "Great video 👏 highly recommended!!", author: "@bazinga469", role: "YouTube Viewer" },
     { text: "Very helpful content for open source beginners!", author: "@techlearner2024", role: "YouTube Viewer" },
     { text: "Your GitLab contribution guide saved me hours of work!", author: "@devops_ninja", role: "YouTube Viewer" },
@@ -563,7 +563,7 @@ function TestimonialsCarousel() {
                         <h2 className="text-xl font-bold text-[var(--color-text-primary)]">Community Love</h2>
                     </div>
                     <a
-                        href="https://youtube.com/@learn-with-shubham"
+                        href="https://youtube.com/@learn-with-Prince"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-[var(--color-bg-card-hover)] border border-[var(--color-border-custom)] text-[var(--color-text-primary)] px-4 py-2 rounded-lg text-sm font-medium hover:bg-[var(--color-bg-card-solid)] transition-colors"

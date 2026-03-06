@@ -5,32 +5,32 @@ import Footer from "../../components/Footer";
 
 const projects = [
     {
-        title: "Blog",
-        description: "Share my knowledge and experience",
-        image: "/cover-1.webp",
-        tags: ["Typescript", "Turso", "Next.js", "Drizzle", "MDX"],
-        link: "https://shubham-kumar.com/blog",
+        title: "Code_Nexus",
+        description: "Build Faster Scale Smarter",
+        image: "/cover-1.png",
+        tags: ["Typescript", "Express.js", "Next.js", "PostgreSql", "Telwind CSS"],
+        link: "https://codenexusstudio.vercel.app",
+    },
+    {
+        title: "HelthBridge-AI",
+        description: "Healthcare & Early Disease Detection Platform",
+        image: "/cover-2.png",
+        tags: ["javascript", "Next.js", "Express.js", "Telwind CSS", "PostgreSql"],
+        link: "https://health-bridge-ai.vercel.app",
+    },
+    {
+        title: "Bicycle Hub",
+        description: "HERO is the largest online bike store, bringing you high-quality & powerful bikes.",
+        image: "/cover-3.png",
+        tags: ["javascript", "React.js", "Express.js", "Telwind CSS", "PostgreSql"],
+        link: "https://bicyclehub-ten.vercel.app/",
     },
     {
         title: "Portfolio",
         description: "My personal portfolio website built with Next.js",
-        image: "/cover.webp",
+        image: "/portfolio.png",
         tags: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
-        link: "https://shubham-kumar.com",
-    },
-    {
-        title: "Open Source at GitLab",
-        description: "Contributions to GitLab's open-source ecosystem",
-        image: "/cover-1.webp",
-        tags: ["Ruby", "Go", "GraphQL", "PostgreSQL"],
-        link: "https://gitlab.com",
-    },
-    {
-        title: "Backend API Service",
-        description: "High-performance REST API built with Go and PostgreSQL",
-        image: "/cover.webp",
-        tags: ["Go", "PostgreSQL", "Docker", "Redis"],
-        link: "https://github.com/imskr",
+        link: "https://princekrcoder.vercel.app",
     },
 ];
 

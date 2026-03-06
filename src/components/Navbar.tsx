@@ -18,7 +18,7 @@ export default function Navbar() {
         { href: "/dashboard", label: "Dashboard" },
         { href: "/projects", label: "Projects" },
         { href: "/about", label: "About" },
-        { href: "/contributions", label: "Contributions" },
+        //{ href: "/contributions", label: "Contributions" },
     ];
 
     return (
@@ -33,7 +33,7 @@ export default function Navbar() {
                     {/* Logo Area */}
                     <Link href="/" className="flex items-center text-black dark:text-white mr-8 group" onClick={() => setIsOpen(false)}>
                         <div className="w-8 h-8 flex items-center justify-center">
-                            <span className="text-xl font-bold font-mono tracking-tighter">S</span>
+                            <span className="text-xl font-bold font-mono tracking-tighter">P</span>
                         </div>
                     </Link>
 

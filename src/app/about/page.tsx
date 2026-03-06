@@ -14,18 +14,18 @@ const milestones = [
 
 const recommendations = [
     {
-        quote: `"Shubham is super passionate about his work and the technologies he works with. He is curious, always trying so many new things that there is always something new to learn from him. I wholeheartedly endorse Shubham for his contributions to the open-source community and his passion for sharing the knowledge he has about tech and open source. Over the years, I have witnessed Shubham's growth, and that's 100% a result of his hard work, passion, and curiosity. He is very inspiring, It's always great to work with him!"`,
+        quote: `"Prince is super passionate about his work and the technologies he works with. He is curious, always trying so many new things that there is always something new to learn from him. I wholeheartedly endorse Prince for his contributions to the open-source community and his passion for sharing the knowledge he has about tech and open source. Over the years, I have witnessed Prince's growth, and that's 100% a result of his hard work, passion, and curiosity. He is very inspiring, It's always great to work with him!"`,
         author: "Princi Vershwal (JavaScript Engineer @Ghost)",
         link: "https://twitter.com/princi_ya",
     },
     {
-        quote: `"Working with Shubham as part of GSoC 2021 internship was a pleasure. He was eager to learn and explore the ruby language, always asking questions and replying in a timely manner. During the internship I saw a significant progress on his skills working with our large codebase and getting used to ship in small iterations supported by automated tests. He was able to work async and follow our Remote workflow. His contributions were valuable for our team and our company."`,
-        author: "Gabriel Mazetto (Senior Backend Engineer @GitLab)",
+        quote: `"Working with Prince as part of GSoC 2021 internship was a pleasure. He was eager to learn and explore the ruby language, always asking questions and replying in a timely manner. During the internship I saw a significant progress on his skills working with our large codebase and getting used to ship in small iterations supported by automated tests. He was able to work async and follow our Remote workflow. His contributions were valuable for our team and our company."`,
+        author: "Gabriel Mazetto (Senior Full-Stack Engineer @GitLab)",
         link: "https://gitlab.com/brodock",
     },
     {
-        quote: `"I co-mentored Shubham for a Google Summer of Code project at GitLab. It was fun working with him. He was good at collaboration and updating us on his progress, asking for help early. He was open to pairing sessions and picking up new tools quickly. His contribution over the summer was valuable for my team. I wish him good luck with his future endeavours!"`,
-        author: "Aakriti Gupta(Senior Backend Engineer @GitLab)",
+        quote: `"I co-mentored Prince for a Google Summer of Code project at GitLab. It was fun working with him. He was good at collaboration and updating us on his progress, asking for help early. He was open to pairing sessions and picking up new tools quickly. His contribution over the summer was valuable for my team. I wish him good luck with his future endeavours!"`,
+        author: "Aakriti Gupta(Senior Full-Stack Engineer @GitLab)",
         link: "https://gitlab.com/aakritigupta",
     },
 ];
@@ -54,14 +54,14 @@ export default function AboutPage() {
                         About
                     </h1>
                     <p className="text-[var(--color-text-secondary)] text-base">
-                        👋 Hi there! I am Shubham. A backend engineer and an open sourcerer.
+                        👋 Hi there! I am Prince. A Full-Stack engineer and an open sourcerer.
                     </p>
                 </motion.div>
 
                 {/* Bio */}
                 <motion.div initial="hidden" animate="visible" variants={fadeUp} custom={0.1} className="flex flex-col gap-5 text-[var(--color-text-secondary)] text-base leading-relaxed mb-10">
                     <p>
-                        I'm a Backend Engineer based in Berlin, Germany, where I relocated in 2023. Originally from India, I earned my bachelor's degree in computer science and engineering in 2022. My software engineering journey started in 2019, fueled by a passion for open-source contribution.
+                        I'm a Full-Stack Engineer based in India. I earned my Master's degree in computer Application in 2027. My software engineering journey started in 2022, fueled by a passion for open-source contribution.
                     </p>
                     <p>
                         I've had the privilege of working with prestigious organizations like{" "}
@@ -73,7 +73,7 @@ export default function AboutPage() {
                         programs. At Mozilla, I participated in the 2020 edition, and the following year, I joined GitLab, where I continued to expand my skills and knowledge.
                     </p>
                     <p>
-                        Currently, I am working as a Backend Engineer at{" "}
+                        Currently, I am working as a Full-Stack Engineer at{" "}
                         <a href="https://gitlab.com" target="_blank" rel="noopener noreferrer" className="underline text-[var(--color-text-primary)] hover:opacity-75 transition-opacity">GitLab</a>{" "}
                         in the Tenant Scale team.
                     </p>

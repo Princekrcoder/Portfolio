@@ -5,19 +5,19 @@ import Footer from "../../components/Footer";
 
 const messages = [
     {
-        name: "Shubham Kumar",
+        name: "Prince Kumar",
         avatar: "/avatar.webp",
         date: "2026-01-25 18:12",
         text: "Updated my contributions page, you'll love it :)",
     },
     {
-        name: "Shubham Kumar",
+        name: "Prince Kumar",
         avatar: "/avatar.webp",
         date: "2025-07-01 17:03",
         text: "🚀 Just updated my blog post reflecting on my 1-year milestone at GitLab :)",
     },
     {
-        name: "Shubham Kumar",
+        name: "Prince Kumar",
         avatar: "/avatar.webp",
         date: "2024-07-01 12:40",
         text: "Hello 👋 Welcome to my website. I write about software engineering and open-source :)",
